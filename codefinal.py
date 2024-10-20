@@ -26,7 +26,7 @@ def colorize(file_path, output_path, blocksize=16):
     # Create image data from blocks
     total_blocks = len(blocks)
     print(f"total_blocks:", total_blocks)
-    width = int((total_blocks ** 0.5)*.5)
+    width = int((total_blocks ** 0.5))
     print(f"Width is:",width)
     height = (total_blocks + width - 1) // width
     print(f"Height is: ",height)
